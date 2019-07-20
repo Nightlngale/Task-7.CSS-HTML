@@ -7,15 +7,22 @@ body{
 	box-sizing:border-box;
 }
 
+.section-content {
+  border: solid 1px black;
+  border-radius: 10px;
+  float: left;
+  padding: 10px;
+}
+
 @media (min-width:1280px)
 {
 	header{
 	max-width: 1200px;
 	margin: 0 auto;
 	height: 60px;
+	overflow: visible;
 	background: #232323;
   	color: #cdcdcd;
-
 }
 
 #page-content {
@@ -24,13 +31,6 @@ body{
 	margin: 0 auto;
 	background: green;
 	font-family: 'Montserrat', sans-serif;
-}
-
-.section-content {
-  border: solid 1px black;
-  border-radius: 10px;
-  float: left;
-  padding: 10px;
 }
 
 main {
@@ -44,5 +44,33 @@ aside {
 
 footer{
   
+}}
+
+@media (max-width:1280px)
+{
+	header{
+	max-width: 960px;
+	margin: 0 auto;
+	height: 60px;
+	background: #232323;
+  	color: #cdcdcd;
 }
+
+#page-content {
+	padding: 20px;
+	max-width: 960px;
+	margin: 0 auto;
+	background: green;
+	font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  width: calc(100% - 160px);
+}
+
+aside {
+  width: 145px;
+  margin-left: 15px;
+}
+
 }

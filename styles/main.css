@@ -1,17 +1,27 @@
 body{
 	margin: 0;
 	padding: 0;
+	background: #ddd;	
 }
 
 *{
 	box-sizing:border-box;
 }
 
-.section-content {
-  border: solid 1px black;
-  border-radius: 10px;
-  float: left;
-  padding: 10px;
+
+section{
+	display: grid;
+  	grid-template-columns: 3fr 1fr;
+  	grid-template-areas: 
+    "main sidebar";
+}
+
+main {
+	grid-area: main;
+}
+
+aside {
+	grid-area: sidebar;
 }
 
 @media (min-width:1280px)
@@ -20,6 +30,16 @@ body{
 	max-width: 1200px;
 	margin: 0 auto;
 	height: 120px;
+	border-radius: 10px 10px 0 0;
+	overflow: visible;
+	background: #232323;
+  	color: #cdcdcd;
+}
+footer{
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 50px;
+	border-radius:0 0 10px 10px ;
 	overflow: visible;
 	background: #232323;
   	color: #cdcdcd;
@@ -29,21 +49,12 @@ body{
 	padding: 20px;
 	max-width: 1200px;
 	margin: 0 auto;
-	background: green;
+	background: white;
 	font-family: 'Montserrat', sans-serif;
 }
 
-main {
-  width: calc(100% - 200px);
-}
-
-aside {
-  width: 150px;
-  margin-left: 20px;
-}
-
 footer{
-  
+  clear: both;
 }}
 
 @media (max-width:1279px)
@@ -52,6 +63,16 @@ footer{
 	max-width: 960px;
 	margin: 0 auto;
 	height: 120px;
+	border-radius: 15px 15px 0 0;
+	background: #232323;
+  	color: #cdcdcd;
+}
+
+footer{
+	max-width: 960px;
+	margin: 0 auto;
+	height: 50px;
+	border-radius: 0 0 15px 15px ;
 	background: #232323;
   	color: #cdcdcd;
 }
@@ -60,7 +81,7 @@ footer{
 	padding: 20px;
 	max-width: 960px;
 	margin: 0 auto;
-	background: green;
+	background: white;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -68,8 +89,10 @@ main {
   width: calc(100% - 160px);
 }
 
-aside {
-  width: 145px;
-  margin-left: 15px;
-}}
+@media (min-width:800px){
 
+header svg{
+  padding-left: 25px; 
+  padding-top: 5px;
+}
+}

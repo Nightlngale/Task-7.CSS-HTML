@@ -9,7 +9,7 @@ a:hover
   color: tomato;
 }
 
-#menuToggle span
+#menu-toggle span
 {
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
@@ -17,12 +17,12 @@ a:hover
               opacity 0.55s ease;
 }
 
-#menuToggle input:checked ~ ul
+#menu-toggle input:checked ~ ul
 {
   transform: none;
 }
 
-#menuToggle input:checked ~ span
+#menu-toggle input:checked ~ span
 {
   opacity: 1;
   background: #232323;
@@ -30,21 +30,25 @@ a:hover
  
 @media (max-width:799px){
 
-#menuToggle
+header, footer{
+  border-radius: 0;
+}
+
+#menu-toggle
 {
   display: block;
-  position: relative;
+  position: absolute;
   top:30px;
   left: 30px;
   float: left;
-
+  top,bottom: 0px;
   z-index: 1;
   
   -webkit-user-select: none;
   user-select: none;
 }
 
-#menuToggle input
+#menu-toggle input
 {
   display: block;
   width: 40px;
@@ -62,7 +66,7 @@ a:hover
   -webkit-touch-callout: none;
 }
 
-#menuToggle span
+#menu-toggle span
 {
   display: block;
   width: 33px;
@@ -83,24 +87,22 @@ a:hover
               opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
+#menu-toggle span:first-child
 {
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
+#menu-toggle span:nth-last-child(2)
 {
   transform-origin: 0% 100%;
 }
 
 #menu
 {
-  position: absolute;
   width: 300px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -140,11 +142,6 @@ svg{
 
 
 @media (min-width:800px){
-
-header svg{
-  padding-left: 25px; 
-  padding-top: 5px;
-}
 
 #social-media{
   position: relative;
@@ -202,7 +199,7 @@ svg{
   color: tomato;
 }
 
-#menuToggle input{
+input{
   display: none;
 }
 }

@@ -19,7 +19,7 @@ body{
 	header{
 	max-width: 1200px;
 	margin: 0 auto;
-	height: 60px;
+	height: 120px;
 	overflow: visible;
 	background: #232323;
   	color: #cdcdcd;
@@ -46,12 +46,12 @@ footer{
   
 }}
 
-@media (max-width:1280px)
+@media (max-width:1279px)
 {
 	header{
 	max-width: 960px;
 	margin: 0 auto;
-	height: 60px;
+	height: 120px;
 	background: #232323;
   	color: #cdcdcd;
 }
@@ -71,6 +71,5 @@ main {
 aside {
   width: 145px;
   margin-left: 15px;
-}
+}}
 
-}

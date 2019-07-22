@@ -41,9 +41,8 @@ header, footer{
   top:30px;
   left: 30px;
   float: left;
-  top,bottom: 0px;
   z-index: 1;
-  
+  height: 1000px;
   -webkit-user-select: none;
   user-select: none;
 }
@@ -104,9 +103,11 @@ header, footer{
   padding: 50px;
   padding-top: 125px;
   background: #ededed;
+  position: absolute;
+  bottom: 0;
+  top:0;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
 
   transform-origin: 0% 0%;
   transform: translate(-100%, 0%);

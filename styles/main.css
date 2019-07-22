@@ -19,6 +19,10 @@ section{
     "main sidebar";
 }
 
+section .author-info{
+	display: none;
+}
+
 .logo-text{
 	position: absolute;
 	padding-left: 100px;
@@ -33,6 +37,10 @@ main {
 
 aside {
 	grid-area: sidebar;
+}
+
+aside .author-info{
+	display: block;
 }
 
 footer{
@@ -136,25 +144,28 @@ svg{
 
 
 @media (max-width: 800px){
-.logo-text{
+.logo-text, .title-main{
 	display: none;
-}
-
-.author{
-	grid-area: author-desc;
 }
 
 section{
 	display: grid;
   	grid-template-columns: 1fr;
   	grid-template-areas: 
-  	"author-desc"
     "main"
     "sidebar";
+}
+
+section .author-info{
+	display: block;
 }
 
 aside{
 	padding-bottom: 40px;
 	margin: 0 auto;
+}
+
+aside .author-info{
+	display: none;
 }
 }

@@ -143,10 +143,19 @@ svg{
 
 @media (min-width:800px){
 
-#social-media{
+.fa-search{
+  color: white;
   position: relative;
   float: right;
-  padding-right: 30px;
+  top:30px;
+  padding-right: 200px;
+}
+
+#social-media{
+  float: right;
+  clear: right;
+  top:15px;
+  padding-right: 50px; 
 }
 
 #social-media li{
@@ -159,14 +168,6 @@ svg{
   font-size: 20px;
 }
 
-
-.fa-search{
-  position: relative;
-  float: right;
-  color: white;
-  margin-right: 50px;
-  margin-top: 20px; 
-}
 
 #menu
 {

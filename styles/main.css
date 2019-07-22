@@ -22,6 +22,7 @@ section{
 .logo-text{
 	position: absolute;
 	padding-left: 100px;
+	color: #dedede;
 	font-size: 35px;
 	top:-20px;
 }
@@ -137,5 +138,23 @@ svg{
 @media (max-width: 800px){
 .logo-text{
 	display: none;
+}
+
+.author{
+	grid-area: author-desc;
+}
+
+section{
+	display: grid;
+  	grid-template-columns: 1fr;
+  	grid-template-areas: 
+  	"author-desc"
+    "main"
+    "sidebar";
+}
+
+aside{
+	padding-bottom: 40px;
+	margin: 0 auto;
 }
 }

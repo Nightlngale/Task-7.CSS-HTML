@@ -107,7 +107,7 @@ button:hover {
   flex-flow: wrap;	
   justify-content: flex-start;
   align-content: stretch;
-  /*grid-template-columns: repeat(auto-fill, minmax(70px,1fr));*/
+  justify-content: center;
 }
 
 .tag{

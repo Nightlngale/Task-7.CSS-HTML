@@ -107,7 +107,7 @@ header, footer{
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-  
+
   transform-origin: 0% 0%;
   transform: translate(-100%, 0%);
   
@@ -159,20 +159,13 @@ svg{
   font-size: 20px;
 }
 
-svg{
-  height: 100px;
-  width: 100px;
-  position: absolute;
-  padding-top: 5px;
-  margin-left: 50px: 
-}
 
 .fa-search{
   position: relative;
   float: right;
   color: white;
-  padding-right: 50px;
-  padding-top: 20px; 
+  margin-right: 50px;
+  margin-top: 20px; 
 }
 
 #menu

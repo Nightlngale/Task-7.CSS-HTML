@@ -1,0 +1,123 @@
+*{
+	box-sizing:border-box;
+}
+
+
+.author{
+  position: relative;
+  background-color: #eee;
+  top:50px; 
+  width: 300px;
+}
+
+
+.author p{
+	padding-left:10px;
+	font-size: 18px;
+	font-weight: 600;
+} 
+
+.author-img{
+  border-radius: 8px 8px 0 0;
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+.author-description p{
+	display: block;
+	position: relative;
+	font-size: 16px;
+	padding-left: 10px; 
+	padding-bottom: 10px;
+	border-bottom: solid 1px;
+	border-bottom-color: #ddd;
+}
+
+.author-description p:first-child{
+	color: tomato;
+	font-size: 22px;
+    font-weight: 900;
+}
+
+.social{
+	border-bottom: solid 1px;
+	border-bottom-color: #ddd;
+}
+
+.social ul{
+	color: #ededed;
+}
+.social li{
+	display: inline;
+	font-size: 25px;
+	padding: 15px;
+}
+
+.subscribe{
+	padding: 0 10px;
+	padding-bottom: 10px;
+	border-bottom: solid 1px;
+	border-bottom-color: #ddd;
+}
+
+input[type=text],
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button{
+  width: 100%;
+  background-color: tomato;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 0 5px 2px gray;
+}
+
+.search{
+	padding: 0 10px;
+	display: inline-flex;
+}
+
+.search input{
+	width: 65%;
+	margin-right: 5%; 
+}
+
+.search button{
+	width: 30%;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+
+.comment-card {
+  display: flex;
+  align-items: center;
+  border: solid 1px #dedede;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.comment-author-img {
+  width: 50px;
+  height: 50px;
+  flex: 1;
+  margin-right: 20px;
+}

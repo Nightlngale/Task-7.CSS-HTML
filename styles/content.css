@@ -1,6 +1,3 @@
-* {
-  box-sizing: border-box;
-}
 
 body {
   font-family: Helvetica, sans-serif;
@@ -9,24 +6,34 @@ body {
   color: #515151;
 }
 
+.title-main{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.author-name-title{
+  color: tomato;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, 300px);
   grid-gap: 10px; 
+  padding-top: 45px; 
   justify-content: space-around;
 }
 
 .post {
   width: 300px;
-  box-shadow: 0 0 3px 1px #dddddd;
+  box-shadow: 0 0 6px 3px #dddddd;
   border-radius: 8px;
+  margin-bottom: 30px;
   overflow: hidden;
 }
 
 .post-img {
   display: block;
-  text-align: center;
-  vertical-align: middle;
   transition: transform .2s ease-in-out;
 }
 

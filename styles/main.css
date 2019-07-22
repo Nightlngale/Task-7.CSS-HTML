@@ -8,7 +8,10 @@ body{
 	box-sizing:border-box;
 }
 
-
+.shadow{
+	z-index: -1;
+    box-shadow: 0px 6px 10px 1px rgba(0, 0, 0, 0.75);
+}
 section{
 	display: grid;
   	grid-template-columns: 3fr 1fr;
@@ -30,7 +33,6 @@ aside {
 	max-width: 1200px;
 	margin: 0 auto;
 	height: 120px;
-	border-radius: 10px 10px 0 0;
 	overflow: visible;
 	background: #232323;
   	color: #cdcdcd;
@@ -39,7 +41,6 @@ footer{
 	max-width: 1200px;
 	margin: 0 auto;
 	height: 50px;
-	border-radius:0 0 10px 10px ;
 	overflow: visible;
 	background: #232323;
   	color: #cdcdcd;
@@ -51,6 +52,9 @@ footer{
 	margin: 0 auto;
 	background: white;
 	font-family: 'Montserrat', sans-serif;
+	z-index: -1;
+    box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.75);
+
 }
 
 footer{
@@ -63,16 +67,15 @@ footer{
 	max-width: 960px;
 	margin: 0 auto;
 	height: 120px;
-	border-radius: 15px 15px 0 0;
 	background: #232323;
   	color: #cdcdcd;
+  	box-shadow: 0px -7px 10px -9px #000000;
 }
 
 footer{
 	max-width: 960px;
 	margin: 0 auto;
 	height: 50px;
-	border-radius: 0 0 15px 15px ;
 	background: #232323;
   	color: #cdcdcd;
 }
@@ -82,17 +85,25 @@ footer{
 	max-width: 960px;
 	margin: 0 auto;
 	background: white;
+	font-family: 'M'
 	font-family: 'Montserrat', sans-serif;
-}
+	box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.75);
 
-main {
-  width: calc(100% - 160px);
-}
+}}
 
 @media (min-width:800px){
-
 header svg{
   padding-left: 25px; 
   padding-top: 5px;
 }
+svg{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  padding-top: 5px;
+  margin-left: 50px: 
+}}
+
+
+@media (max-width: 800px){
 }

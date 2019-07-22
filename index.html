@@ -7,11 +7,12 @@
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/navmenu.css">
   <link rel="stylesheet" href="styles/content.css">
+  <link rel="stylesheet" href="styles/author.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<header>
+	<header div class="shadow">
 		<nav role="navigation">
 
 			<a href="#" class="fa fa-search"></a>
@@ -48,6 +49,9 @@
 
 	<section id="page-content">
 		<main>
+			<div class="title-main">
+				<p><span class="author-name-title">Amid Promod</span> `s blogs</p>
+			</div>	
 			<div class="container">
 			  <div class="post">
 			  	<div class="img-wrapper">
@@ -167,12 +171,56 @@
 			</div>
 		</main>
 		<aside>
-			  <div class="post">
+			<div class="author">
+			  <div class="autor-info">
+			  	<img class="author-img"  src="https://randomuser.me/api/portraits/men/39.jpg" alt="user">
+			  	<div class="author-description">
+			  		<p>Amid Promod, 26</p>
+			  		<p>Hi, I am cheerful, sociable, witty person. My friends say I am reliable and honest</p>
+			  	</div>
 			  </div>
+			  <p>Folow me</p>
+			  <div class="social">
+			  	<ul>
+			    	<li><a href="#" class="fa fa-facebook"></a></li>
+			     	<li><a href="#" class="fa fa-instagram"></a></li>
+			     	<li><a href="#" class="fa fa-twitter"></a></li>
+			     	<li><a href="#" class="fa fa-youtube"></a></li>
+				</ul>
+			  </div>
+			  <p>Subscribe</p>
+			  <div class="subscribe">	
+			  	<form >
+				    <label for="name">name</label>
+				    <input type="text" id="name" name="firstname" placeholder="Your name..">
+				    <label for="mail">email</label>
+				    <input type="email" id="mail" name="email" placeholder="Your email..">
+				    <button type="submit">subscribe</button>
+				</form>
+			  </div>
+			  <p>Search</p>
+			  <div class="search">
+				<input type="text" id="searchbar">
+				<button type="submit">search</button>
+			  </div>
+			  <p>Last comments</p>
+			  <div class="last-comments">
+			  	<div class="container">
+				  <div class="comment-card">
+				    <img class="comment-author-img" src="https://images.vexels.com/media/users/3/147101/isolated/preview/b4a49d4b864c74bb73de63f080ad7930-instagram-profile-button-by-vexels.png" alt="profile image">
+				    <div class="profile-info">
+				      <div class="name">John Smith</div>
+				      <div class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorum numquam aliquam molestiae tempore quis.</div>
+				      <div></div>
+				    </div>
+				  </div>
+				</div>
+			  </div>
+			</div>
 		</aside>
 	</section>
 			
-	<footer>
+	<footer div class="shadow">
 		
 	</footer>
 </body>

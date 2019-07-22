@@ -86,7 +86,8 @@ button:hover {
   box-shadow: 0 0 5px 2px gray;
 }
 
-.search{
+.search,
+.last-comment{
 	padding: 0 10px;
 	display: inline-flex;
 }
@@ -100,24 +101,33 @@ button:hover {
 	width: 30%;
 }
 
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 10px;
+.tags {
+  padding: 0 10px;
+  display: flex;
+  flex-flow: wrap;	
+  justify-content: flex-start;
+  align-content: stretch;
+  /*grid-template-columns: repeat(auto-fill, minmax(70px,1fr));*/
 }
 
-.comment-card {
-  display: flex;
-  align-items: center;
+.tag{
+  display: flex-inline;
+  width: fit-content; 
+  background-color:tomato;
+  text-align: center;
   border: solid 1px #dedede;
   border-radius: 5px;
   padding: 10px;
 }
 
+.comment-card {
+  border: solid 1px #dedede;
+  border-radius: 5px;
+  padding: 10px;
+
+}
+
 .comment-author-img {
-  width: 50px;
-  height: 50px;
-  flex: 1;
+	height: 50px;
   margin-right: 20px;
 }

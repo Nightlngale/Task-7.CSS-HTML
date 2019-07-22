@@ -156,7 +156,7 @@ svg{
   float: right;
   clear: right;
   top:15px;
-  padding-right: 50px; 
+  margin-right: 50px; 
 }
 
 #social-media li{
@@ -164,11 +164,16 @@ svg{
 }
 
 #social-media a{
-  color: white;
   padding-left: 15px;
   font-size: 20px;
 }
 
+.fa-facebook,
+.fa-youtube,
+.fa-twitter,
+.fa-instagram{
+    color: white;
+}
 
 #menu
 {
